@@ -21,6 +21,11 @@ public class EmpruntController {
         return empruntRepository.save(emprunt);
     }
 
+    @PostMapping(value = "/bulk", consumes = "application/json")
+    public Iterable<Emprunt> createBulk(@RequestBody Iterable<Emprunt> empruntList) {
+        return empruntRepository.saveAll(empruntList);
+    }
+
     @GetMapping(value = "/{id}", produces = "application/json")
     public Emprunt retrieve(@PathVariable Integer id) {
         return empruntRepository.findById(id).orElseThrow(() -> new NoSuchElementException("ID: " + id));

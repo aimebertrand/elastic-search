@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "dateEmprunt": "2023-06-14T08:25:18.956Z",
+        "dateRetour": "2023-07-14T08:25:18.956Z",
+        "idUtilisateur": 1,
+        "idMedia": 1,
+        "typeMedia": "livre"
+    },
+    {
+        "id": 2,
+        "dateEmprunt": "2023-06-14T08:25:18.956Z",
+        "dateRetour": "2023-07-14T08:25:18.956Z",
+        "idUtilisateur": 2,
+        "idMedia": 340,
+        "typeMedia": "bd"
+    },
+    {
+        "id": 3,
+        "dateEmprunt": "2023-06-14T08:25:18.956Z",
+        "dateRetour": "2023-07-14T08:25:18.956Z",
+        "idUtilisateur": 3,
+        "idMedia": 440,
+        "typeMedia": "bd"
+    },
+    {
+        "id": 20,
+        "dateEmprunt": "2023-06-14T08:25:18.956Z",
+        "dateRetour": "2023-07-14T08:25:18.956Z",
+        "idUtilisateur": 4,
+        "idMedia": 700,
+        "typeMedia": "dvd"
+    },
+    {
+        "id": 21,
+        "dateEmprunt": "2023-06-14T08:25:18.956Z",
+        "dateRetour": "2023-07-14T08:25:18.956Z",
+        "idUtilisateur": 5,
+        "idMedia": 800,
+        "typeMedia": "dvd"
+    },
+    {
+        "id": 22,
+        "dateEmprunt": "2023-06-14T08:25:18.956Z",
+        "dateRetour": "2023-07-14T08:25:18.956Z",
+        "idUtilisateur": 6,
+        "idMedia": 900,
+        "typeMedia": "dvd"
+    },
+    {
+        "id": 23,
+        "dateEmprunt": "2023-06-14T08:25:18.956Z",
+        "dateRetour": "2023-07-14T08:25:18.956Z",
+        "idUtilisateur": 7,
+        "idMedia": 1000,
+        "typeMedia": "dvd"
+    },
+    {
+        "id": 24,
+        "dateEmprunt": "2023-06-14T08:25:18.956Z",
+        "dateRetour": "2023-07-14T08:25:18.956Z",
+        "idUtilisateur": 8,
+        "idMedia": 1100,
+        "typeMedia": "dvd"
+    },
+    {
+        "id": 25,
+        "dateEmprunt": "2023-06-14T08:25:18.956Z",
+        "dateRetour": "2023-07-14T08:25:18.956Z",
+        "idUtilisateur": 9,
+        "idMedia": 1200,
+        "typeMedia": "dvd"
+    },
+    {
+        "id": 26,
+        "dateEmprunt": "2023-06-14T08:25:18.956Z",
+        "dateRetour": "2023-07-14T08:25:18.956Z",
+        "idUtilisateur": 10,
+        "idMedia": 1300,
+        "typeMedia": "dvd"
+    },
+    {
+        "id":123,
+        "dateEmprunt": "2023-06-14T08:25:18.956Z",
+        "dateRetour": "2023-07-14T08:25:18.956Z",
+        "idUtilisateur": 10,
+        "idMedia": 123,
+        "typeMedia": "livre"
+    }
+]

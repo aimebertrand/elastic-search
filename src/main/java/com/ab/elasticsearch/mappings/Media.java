@@ -1,6 +1,8 @@
 package com.ab.elasticsearch.mappings;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,6 +16,7 @@ import org.springframework.data.elasticsearch.annotations.FieldType;
 @Getter @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Media {
     @Id
     private Integer id;

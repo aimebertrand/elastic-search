@@ -43,12 +43,15 @@ public class ElasticsearchClientMediaServiceImpl implements ElasticsearchClientM
         return mediaSearchResponse.hits().hits().stream().map(Hit::source).collect(Collectors.toList());
     }
 
+
     @Override
     public List<Media> textSearch(List<String> fields, String term, int size) throws IOException {
         SearchResponse<Media> mediaSearchResponse = elasticsearchClient.search(req -> req.index(index).size(
                 size).query(query -> query.multiMatch(multiMatchQuery(fields, term))), Media.class);
         return mediaSearchResponse.hits().hits().stream().map(Hit::source).collect(Collectors.toList());
     }
+
+
 
     private List<Query> prepareQueryList(MediaQuery mediaQuery) {
         var queryMap = Map.of(

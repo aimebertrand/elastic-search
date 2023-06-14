@@ -6,6 +6,7 @@ import com.ab.elasticsearch.springdata.UtilisateurRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.NoSuchElementException;
 
 @RestController
@@ -21,7 +22,12 @@ public class UtilisateurController {
         return utilisateurRepository.save(utilisateur);
     }
 
-    @GetMapping(value = "/{id}", produces = "application/json")
+    @PostMapping(value = "/bulk", consumes = "application/json")
+    public Iterable<Utilisateur> createBulk(@RequestBody List<Utilisateur> utilisateurList) {
+            return utilisateurRepository.saveAll(utilisateurList);
+        }
+
+        @GetMapping(value = "/{id}", produces = "application/json")
     public Utilisateur retrieve(@PathVariable Integer id) {
         return utilisateurRepository.findById(id).orElseThrow(() -> new NoSuchElementException("ID: " + id));
     }
